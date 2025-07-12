@@ -50,9 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem('theme', 'light');
         }
     });
+ 
 
 
-
+    
 
     // Close sidebar when clicking outside on mobile 
     document.addEventListener('click', (e) => {
