@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Mobile overlay -->
+        <div class="mobile-overlay" id="mobile"></div>
+        <!-- header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="mobile-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search....">
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1716072947592-624e1c1f35da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMxfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                        alt="User Profile">
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>CodewithAdi</h1>
+            </div>
+            <div class="nav-title">Main Menu</div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active">
+                    <i. class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <i. class="fas fa-project-diagram"></i>
+                        <span>Project</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <i. class="fas fa-calendar"></i>
+                        <span>Calendar</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <i. class="fas fa-user"></i>
+                        <span>Team</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <i. class="fas fa-chart-pie"></i>
+                        <span>Reports</span>
+                </a>
+                <a href="#" class="nav-item ">
+                    <i. class="fas fa-cog"></i>
+                        <span>Settings</span>
+                </a>
+            </div>
+            <div class="nav-title">Team Members</div>
+            <div class="nav-links">
+                <div class="team-members">
+                    <img class="member-avatar"
+                        src="https://images.unsplash.com/photo-1742210667338-5e503bcb0ea1?q=80&w=839&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="jhon">
+                    <span>Daxen Corveil</span>
+                </div>
+                <div class="team-members">
+                    <img class="member-avatar"
+                        src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                        alt="jhon">
+                    <span>Serin Avalar</span>
+                </div>
+                <div class="team-members">
+                    <img class="member-avatar"
+                        src="https://images.unsplash.com/photo-1578472577660-6f4a47a6660d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                        alt="jhon">
+                    <span>Branik Oren</span>
+                </div>
+                <div class="team-members">
+                    <img class="member-avatar"
+                        src="https://images.unsplash.com/photo-1610872817784-5b164d9ae6e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                        alt="jhon">
+                    <span>Velia Strahn</span>
+                </div>
+                <div class="team-members">
+                    <img class="member-avatar"
+                        src="https://images.unsplash.com/photo-1601142189538-ff180a78aef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                        alt="jhon">
+                    <span>Elira Maeven</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="content">
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                <h1> Welcome Back , Thorne!</h1>
+                <p>You have 3 ongoing projects. 2 deadline are approching this week.</p>
+                <button class="btn btn-light">
+                    <i class="fas fa-plus"></i> Create New projects
+                </button>
+            </div>
+            <!-- Profile Card  -->
+            <div class="profile-card card">
+                <img class="profile-image"
+                    src="https://images.unsplash.com/photo-1716072947592-624e1c1f35da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMxfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                    alt="Thorne">
+                <div class="profile-info">
+                    <h2>Thorne Alric</h2>
+                    <p>Project Manager</p>
+                    <div class="progress-ring">
+                        <svg class="progress-circle" width="100" height="100" viewBox="0 0 100 100">
+                            <circle class="progress-bg" cx="50" cy="50" r="45" />
+                            <circle class="progress-fill" cx="50" cy="50" r="45" />
+                        </svg>
+                        <div class="progress-text">75%</div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stats-item">
+                            <span class="stats-value">
+                                12
+                            </span>
+                            <span class="stats-label">Project</span>
+                        </div>
+
+                        <div class="stats-item">
+                            <span class="stats-value">
+                                24
+                            </span>
+                            <span class="stats-label">Task</span>
+                        </div>
+                        <div class="stats-item">
+                            <span class="stats-value">
+                                89%
+                            </span>
+                            <span class="stats-label">Success</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project Section  -->
+            <Section class="project-section">
+                <div class="section-title">
+                    <h2>Ongoing Projects</h2>
+                    <a href="#" class="view-all">
+                        View All <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1  -->
+                    <div class="card project-card project-1">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3><span class="priority-indicator priority-high"></span>
+                                    Website Redesign</h3>
+
+                                <span class="project-catagory design"> Design </span>
+
+                            </div>
+
+                            <div class="project-time">
+                                <i class="fas fa-clock"></i>
+                                3 weeks
+                            </div>
+
+
+
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-info"><span>Project Progress</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <div class="team-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1600201091949-5c8ee0bed86e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1684966610091-f6beda2d025a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1590586029974-2c90c0718449?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                            </div>
+                            <div class="days-left">
+                                <i class="fas fa-calendar"></i>12 days left
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2  -->
+
+                    <div class="card project-card project-2">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3><span class="priority-indicator priority-medium"></span>
+                                    Mobile App devlopment</h3>
+
+                                <span class="project-catagory devlopment">Development</span>
+
+                            </div>
+
+                            <div class="project-time">
+                                <i class="fas fa-clock"></i>
+                                8 weeks
+                            </div>
+
+
+
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-info"><span>Project Progress</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <div class="team-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1600201091949-5c8ee0bed86e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1684966610091-f6beda2d025a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1590586029974-2c90c0718449?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                            </div>
+                            <div class="days-left">
+                                <i class="fas fa-calendar"></i>24 days left
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3  -->
+
+                    <div class="card project-card project-3">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3><span class="priority-indicator priority-low"></span>
+                                    Tool website</h3>
+
+                                <span class="project-catagory tool-website"> Tool website </span>
+
+                            </div>
+
+                            <div class="project-time">
+                                <i class="fas fa-clock"></i>
+                                10 weeks
+                            </div>
+
+
+
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-info"><span>Project Progress</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <div class="team-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1600201091949-5c8ee0bed86e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1684966610091-f6beda2d025a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                                <img class="member-avatar"
+                                    src="https://images.unsplash.com/photo-1590586029974-2c90c0718449?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                                    alt="user-avatar">
+                            </div>
+                            <div class="days-left">
+                                <i class="fas fa-calendar"></i> 30 days left
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </Section>
+            <!-- Stats Section  -->
+            <section class="stats-section">
+                <div class="section-title">
+                    <h2>Project Statics</h2>
+                </div>
+                <div class="stats-grid">
+                    <!-- Stats Card 1  -->
+                    <div class="card stats-card">
+                        <div class="stat-icon design">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Total Project</div>
+                    </div>
+                    <!-- Stats Card 2  -->
+                    <div class="card stats-card">
+                        <div class="stat-icon devlopment">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">In Progress</div>
+                    </div>
+                    <!-- Stats Card 3  -->
+                    <div class="card stats-card">
+                        <div class="stat-icon tool-website">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">In Progress</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Timeline Section  -->
+            <section class="card timeline-section">
+                <div class="section-title">
+                    <h2>Task Distribution Timeline</h2>
+                    <a href="#" class="view-all"> View Full Timeline <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="timeline-container">
+                    <div class="user-column">
+                        <div class="user-row">
+                            <div class="user-name">Serin Avalar</div>
+                        </div>
+                        <div class="user-row">
+                            <div class="user-name">Branik Oren</div>
+                        </div>
+                        <div class="user-row">
+                            <div class="user-name">Velia Strahn</div>
+                        </div>
+                        <div class="user-row">
+                            <div class="user-name">Daxen Corveil</div>
+                        </div>
+                        <div class="user-row">
+                            <div class="user-name">Elira Maeven</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-area">
+                        <div class="timeline-grid">
+                            <!-- Grid Lines  -->
+                            <div class="grid-line" style="top: 0;"></div>
+                            <div class="grid-line" style="top: 60px;"></div>
+                            <div class="grid-line" style="top: 120px;"></div>
+                            <div class="grid-line" style="top: 180px;"></div>
+                            <div class="grid-line" style="top: 240px;"></div>
+                        </div>
+                        <!-- Time Marker  -->
+                        <div class="time-marker" style="left: 0 ;">Mon</div>
+                        <div class="time-marker" style="left: 200px ;">Tue</div>
+                        <div class="time-marker" style="left: 400px ;">wed</div>
+                        <div class="time-marker" style="left: 600px ;">Thus</div>
+                        <div class="time-marker" style="left: 800px ;">Fri</div>
+                        <!-- Task Bars  -->
+                        <div class="task-bar"
+                            style="top: 15px; left: 0; width: 120px; background: linear-gradient(135deg,#4361ee , #4895ef);">
+                            Design Review</div>
+                        <div class="task-bar"
+                            style="top: 15px; left: 400px; width: 180px; background: linear-gradient(135deg,#f72585 , #ff6b96);">
+                            Client Meeting</div>
+                        <div class="task-bar"
+                            style="top: 75px; left: 200px; width: 150px; background: linear-gradient(135deg,#4cc9f0 , #70e4ff);">
+                            API Intergraton</div>
+                        <div class="task-bar"
+                            style="top: 75px; left: 600px; width: 200px; background: linear-gradient(135deg,#4361ee , #4895ef);">
+                            Frontend Development</div>
+                        <div class="task-bar"
+                            style="top: 135px; left: 800px; width: 200px; background: linear-gradient(135deg,#f72585 , #ff6b96);">
+                            Content</div>
+                        <div class="task-bar"
+                            style="top: 195px; left: 0; width: 180px; background: linear-gradient(135deg,#4cc9f0 , #70e4ff);">
+                            Bug Fixing</div>
+                        <div class="task-bar"
+                            style="top: 195px; left: 400px; width: 150px; background: linear-gradient(135deg,#4361ee , #4895ef);">
+                            Testing</div>
+                        <div class="task-bar"
+                            style="top: 255px; left: 200px; width: 250px; background: linear-gradient(135deg,#f72585 , #ff6b96);">
+                            Deployment</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Users Section  -->
+             <section class="users-section">
+                <div class="section-title">
+                    <h2>Team Members</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="users-grid">
+                    <!-- User1 -->
+                     <div class="card user-card">
+                        <div class="user-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1742210667338-5e503bcb0ea1?q=80&w=839&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="user-avatar-lg">
+                        </div>
+                        <div class="user-info">
+                            <h3>Daxen Corveil</h3>
+                            <p>Frontend Devloper</p>
+                        </div>
+                     </div>
+                      <!-- User2 -->
+                     <div class="card user-card">
+                        <div class="user-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHByb2ZpbGV8ZW58MHwyfDB8fHww" alt="user-avatar-lg">
+                        </div>
+                        <div class="user-info">
+                            <h3>Serin Avalar</h3>
+                            <p>Project Manager</p>
+                        </div>
+                     </div>
+                      <!-- User3 -->
+                     <div class="card user-card">
+                        <div class="user-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1578472577660-6f4a47a6660d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHByb2ZpbGV8ZW58MHwyfDB8fHww" alt="user-avatar-lg">
+                        </div>
+                        <div class="user-info">
+                            <h3>Branik Oren</h3>
+                            <p>UI/UX Desiger</p>
+                        </div>
+                     </div>
+                      <!-- User4 -->
+                     <div class="card user-card">
+                        <div class="user-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1610872817784-5b164d9ae6e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHByb2ZpbGV8ZW58MHwyfDB8fHww" alt="user-avatar-lg">
+                        </div>
+                        <div class="user-info">
+                            <h3>Velia Strahn</h3>
+                            <p>Marketing Specialist</p>
+                        </div>
+                     </div>
+                      <!-- User5 -->
+                     <div class="card user-card">
+                        <div class="user-avatar-lg">
+                            <img src="https://images.unsplash.com/photo-1601142189538-ff180a78aef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYwfHxwcm9maWxlfGVufDB8MnwwfHx8MA%3D%3D" alt="user-avatar-lg">
+                        </div>
+                        <div class="user-info">
+                            <h3>Elira Maeven</h3>
+                            <p>Backend Devloper</p>
+                        </div>
+                     </div>
+                </div>
+
+             </section>
+
+
+
+
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 CodewithAdi Dashboard. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
